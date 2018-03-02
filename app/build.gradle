@@ -15,6 +15,8 @@ android {
         renderscriptTargetApi 20
         renderscriptSupportModeEnabled true
         multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
     }
 
     buildTypes {
@@ -83,6 +85,10 @@ dependencies {
     }
     implementation 'com.anjlab.android.iab.v3:library:1.0.+'
     implementation 'org.nanohttpd:nanohttpd:2.3.1'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:3.0.1'
+    androidTestCompile 'com.android.support.test:runner:1.0.1'
+    androidTestCompile "com.android.support.test.espresso:espresso-intents:3.0.1"
+    androidTestCompile "com.android.support.test.espresso:espresso-contrib:3.0.1"
 
 
 }
